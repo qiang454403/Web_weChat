@@ -6,7 +6,7 @@ class Handle(object):
         try:
             data = web.input()
             if len(data) == 0:
-                return "hello, this is handle view",webData
+                return "hello, this is handle view"
             signature = data.signature
             timestamp = data.timestamp
             nonce = data.nonce
@@ -28,7 +28,7 @@ class Handle(object):
 	def POST(self):
 		try:
 			webData = web.data()
-			print "Handle Post webdata is "
+			print "Handle Post webdata is ",webData
    #后台打日志
 			recMsg = receive.parse_xml(webData)
 			if isinstance(recMsg, receive.Msg) and recMsg.MsgType == 'text':
