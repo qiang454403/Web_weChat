@@ -1,6 +1,6 @@
 #coding=gbk
 import codecs
-f = codecs.open('doc/Item.csv','r','utf-8')
+f = codecs.open('doc/Item.csv','r','gbk')
 s = f.readlines()
 f.close()
 for line in s:
