@@ -1,6 +1,9 @@
-# -*- coding: utf-8 -*-# filename: handle.pyimport hashlibimport replyimport receiveimport webclass Handle(object):
-import hashlib
-import web
+# -*- coding: utf-8 -*-# filename: handle.py
+import hashlibimport reply
+import receive
+import webclass Handle(object):
+
+
 class Handle(object):
 	def POST(self):
 		try:
