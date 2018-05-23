@@ -2,8 +2,7 @@
 import hashlib
 import reply
 import receive
-import webclass Handle(object):
-
+import web
 
 class Handle(object):
 	def POST(self):

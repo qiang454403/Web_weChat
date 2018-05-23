@@ -1,10 +1,11 @@
 # -*- coding: utf-8 -*-# filename: reply.py
-import timeclass Msg(object):
+import time
 
-def __init__(self):
-	pass
-def send(self):
-	return "success"
+class Msg(object):
+	def __init__(self):
+		pass
+	def send(self):
+		return "success"
 class TextMsg(Msg):
 	def __init__(self, toUserName, fromUserName, content):
 		self.__dict = dict()
