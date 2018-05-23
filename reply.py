@@ -1,4 +1,6 @@
-# -*- coding: utf-8 -*-# filename: reply.pyimport timeclass Msg(object):
+# -*- coding: utf-8 -*-# filename: reply.py
+import timeclass Msg(object):
+
 def __init__(self):
 	pass
 def send(self):
