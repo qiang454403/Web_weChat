@@ -11,7 +11,6 @@ class Handle(object):
 			print "Handle Post webdata is ",webData
    #后台打日志
 			recMsg = receive.parse_xml(webData)
-			print "back msg is ",recMsg.Msg
 			if isinstance(recMsg, receive.Msg) and recMsg.MsgType == 'text':
 				toUser = recMsg.FromUserName
 				fromUser = recMsg.ToUserName
