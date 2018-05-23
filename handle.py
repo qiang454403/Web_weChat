@@ -12,6 +12,7 @@ class Handle(object):
    #后台打日志
 			recMsg = receive.parse_xml(webData)
 			if isinstance(recMsg, receive.Msg) and recMsg.MsgType == 'text':
+				print "\n 发送的消息是：",recMsg.content
 				toUser = recMsg.FromUserName
 				fromUser = recMsg.ToUserName
 				content = "test"
