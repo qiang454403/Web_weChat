@@ -2,7 +2,7 @@
 import hashlib
 import web
 class Handle(object):
-	def GET(self):
+	def POST(self):
 		try:
 			webData = web.data()
 			print "Handle Post webdata is ",webData
