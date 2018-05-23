@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-# filename: handle.py
-import hashlibimport reply
+import hashlib
+import reply
 import receive
 import webclass Handle(object):
 
