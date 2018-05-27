@@ -10,7 +10,6 @@ class CacheMgr():
 		if typeStr=="@ml":
 			str = Cache()
 			msg  = str.GetCatalog()
-			print msg
 			return msg
 		return "error"
 	

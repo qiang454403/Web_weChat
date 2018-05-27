@@ -24,7 +24,7 @@ class Cache():
 		for item in self.alldata:
 			if item[1]!=name:
 				Str=Str+name+":"+item[1]+type+":"+item[2]+"\r\n"
-		return self.alldata[1][1]+self.alldata[1][2]
+		return Str
 		
 	def read(self):
 		f = codecs.open('doc/Catalog.csv','r','gbk')
