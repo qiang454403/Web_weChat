@@ -19,6 +19,7 @@ class Handle(object):
 				textmgr = CacheMgr()
 				str =textmgr.Get("@ml")
 				content =str
+				print content
 				replyMsg = reply.TextMsg(toUser, fromUser, content)
 				return replyMsg.send()
 			else:
