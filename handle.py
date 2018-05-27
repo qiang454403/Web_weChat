@@ -3,7 +3,7 @@ import hashlib
 import reply
 import receive
 import web
-format cacheMgr import CacheMgr
+from cacheMgr import CacheMgr
 
 class Handle(object):
 	def POST(self):
