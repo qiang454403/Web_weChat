@@ -1,6 +1,5 @@
 # -*- coding: utf-8 -*-# filename: cacheMgr.py
 from cache import Cache
-import sys\
 
 
 class CacheMgr():
@@ -11,7 +10,7 @@ class CacheMgr():
 		if typeStr=="@ml":
 			str = Cache()
 			msg  = str.GetCatalog()
-			print (msg.decode('utf-8').encode(sys.getfilesystemencoding()))
+			print msg
 			return msg
 		return "error"
 	

@@ -33,10 +33,10 @@ class Cache():
 		for line in s:
 			
 			lines = line.split(',')
-			lines[0] = lines[0].encode('gbk')
-			lines[1] = lines[1].encode('gbk')
-			lines[2] = lines[2].replace("\r\n","")
-			lines[2] = lines[2].encode('gbk')
+			#lines[0] = lines[0].encode('gbk')
+			#lines[1] = lines[1].encode('gbk')
+			#lines[2] = lines[2].replace("\r\n","")
+			#lines[2] = lines[2].encode('gbk')
 			self.alldata.append(lines)
-		#print self.alldata
+	
 		
