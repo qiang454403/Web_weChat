@@ -23,7 +23,7 @@ class Cache():
 		type = self.alldata[0][2]
 		for item in self.alldata:
 			if item[1]!=name:
-				Str=Str+"名称"+":"+item[1]+"编号"+":"+item[2]+"\r\n"
+				Str=Str+name+":"+item[1]+type+":"+item[2]+"\r\n"
 		return Str
 		
 	def read(self):
