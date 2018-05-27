@@ -16,8 +16,8 @@ class Handle(object):
 				print "发送的消息是：",recMsg.Content
 				toUser = recMsg.FromUserName
 				fromUser = recMsg.ToUserName
-				dic = Cache()
-				str = dic.GetCatalog("@ml")
+				textmgr = CacheMgr()
+				str =textmgr.Get("@ml")
 				content =str
 				replyMsg = reply.TextMsg(toUser, fromUser, content)
 				return replyMsg.send()
