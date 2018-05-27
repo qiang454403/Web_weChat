@@ -1,4 +1,4 @@
-#coding=utf-8
+# -*- coding: utf-8 -*-# filename: cacheMgr.py
 from cache import Cache
 
 class CacheMgr():
@@ -8,6 +8,8 @@ class CacheMgr():
 		print typeStr
 		if typeStr=="@ml":
 			str = Cache()
-			return str.GetCatalog()
-		return "指令无效"
+			msg  = str.GetCatalog()
+			print msg
+			return msg
+		return "error"
 		
