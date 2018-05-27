@@ -17,7 +17,7 @@ class Handle(object):
 				toUser = recMsg.FromUserName
 				fromUser = recMsg.ToUserName
 				dic = Cache()
-				str = dic.GetCatalog()
+				str = dic.GetCatalog("@ml")
 				content =str
 				replyMsg = reply.TextMsg(toUser, fromUser, content)
 				return replyMsg.send()
