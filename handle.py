@@ -3,6 +3,7 @@ import hashlib
 import reply
 import receive
 import web
+import cacheMgr
 
 class Handle(object):
 	def POST(self):
@@ -15,7 +16,7 @@ class Handle(object):
 				print "发送的消息是：",recMsg.Content
 				toUser = recMsg.FromUserName
 				fromUser = recMsg.ToUserName
-				content = "test"
+				content = cacheMgr.Get(recMsg.Content)
 				replyMsg = reply.TextMsg(toUser, fromUser, content)
 				return replyMsg.send()
 			else:
