@@ -4,6 +4,7 @@ class CacheMgr():
 	def __init__(self):
 		self.dic = Cache()
 	def Get(typeStr):
+		print typeStr
 		if typeStr=="@目录":
 			logdata =  self.dic.GetCatalog()
 			str = ""

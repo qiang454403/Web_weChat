@@ -17,6 +17,7 @@ class Handle(object):
 				toUser = recMsg.FromUserName
 				fromUser = recMsg.ToUserName
 				content = cacheMgr.Get(recMsg.Content)
+				print content
 				replyMsg = reply.TextMsg(toUser, fromUser, content)
 				return replyMsg.send()
 			else:
